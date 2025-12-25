@@ -9,6 +9,12 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import RevealAnimations from "../components/RevealAnimations";
 
+export const metadata = {
+  title: "High-Performance Websites That Convert",
+  description:
+    "I help businesses grow with fast, scalable, and conversion-focused websites."
+};
+
 export default function Home() {
   return (
     <>

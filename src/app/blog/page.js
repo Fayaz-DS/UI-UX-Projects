@@ -1,4 +1,9 @@
-import { client } from "../../lib/sanity";
+import { client } from "@/lib/sanity";
+
+export const metadata = {
+  title: "Blog",
+  description: "Insights on web development, performance, and design."
+};
 
 export default async function Blog() {
   const posts = await client.fetch(`
@@ -11,7 +16,7 @@ export default async function Blog() {
 
   return (
     <section className="container">
-      <h1>Blog & Case Studies</h1>
+      <h1>Blog</h1>
 
       {posts.map(post => (
         <article key={post.slug.current}>

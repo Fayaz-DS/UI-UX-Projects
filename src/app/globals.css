@@ -526,3 +526,22 @@ input, textarea, button {
     transition: none !important;
   }
 }
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
